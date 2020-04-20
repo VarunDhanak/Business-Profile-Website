@@ -10,13 +10,21 @@ html, body {
 }
 
 
-.navbar{
-    display: flex;
-    padding: 10px;
+.navbar, .container{
+    
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    justify-content: space-between;
+    
+}
+
+
+.navbar{
+    
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px; 
+  
 }
 
 .brand, .nav-link, a {
@@ -52,6 +60,129 @@ html, body {
 .dropdownLink {
     display: none;
 }
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #CCFFCC ;
+}
+
+.headshot-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem, 0;
+}
+
+.headshot{
+    border-radius: 50%;
+    max-width: 200px;
+    width: 100%;
+}
+
+.services{
+    background-color: #F1F3Fa;
+    padding: 4rem 1rem
+}
+
+.media-object{
+    display: flex;
+    align-items:  center;
+    padding: 4rem 1rem;
+    
+}
+.icon-left, 
+.icon-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.blurb-wrapper-right,
+.blurb-wrapper-left{
+    flex: 1;
+}
+
+
+.icon-left,
+.blurb-wrapper-left{
+    order: 1;
+}
+
+.icon-right,
+.blurb-wrapper-right{
+    order: 2;
+}
+
+
+.blurb-wrapper{
+    flex: 1;
+}
+
+.blurb-header{
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.blurb-info{
+    color: #646B90;
+    font-family: 16px;
+}
+
+.icon{
+   width: 180px;
+    
+}
+
+.quote-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    
+}
+
+.quote-btn{
+    color: #FFFFFF;
+    background-color: #66B6D3;
+    font-size: 18px;
+    border: none;
+    padding: 0.8rem 4rem;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    
+}
+
+.section-header{
+    text-align: center;
+    padding: 6rem 0 4rem;
+}
+
+.portfolio-wrapper{
+    display: flex;
+    max-width: 250px;
+    
+}
+
+.portfolio-box{
+    width: 250px;
+    height: 250px;
+    background-color: #F1F3Fa;
+    transition: 0.2s ease-in-out;
+}
+
+
+.portfolio-box:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+
 
 
 
@@ -91,6 +222,21 @@ html, body {
         line-height: 2;
     }
     
+    .media-object{
+        text-align: center;
+        flex-direction: column; 
+    }
+    
+    .icon-right,
+    .icon-left{
+        order:1;
+    }
+    
+    .blurb-wrapper-right,
+     .blurb-wrapper-left{
+      order: 2;
+      padding: 2rem;
+    }
     
 
 
